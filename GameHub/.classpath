@@ -6,9 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/OZ_TE/eclipse/activation.jar"/>
-	<classpathentry kind="lib" path="C:/Users/OZ_TE/eclipse/additionnal.jar"/>
-	<classpathentry kind="lib" path="C:/Users/OZ_TE/eclipse/mail.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/activation.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/mailapi-1.5.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/OZ_TE/.p2/pool/plugins/org.apache.axis_1.4.0.v201411182030/lib/axis.jar"/>
 	<classpathentry kind="lib" path="C:/Users/OZ_TE/.p2/pool/plugins/org.apache.commons.discovery_0.2.0.v201004190315/lib/commons-discovery-0.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/OZ_TE/.p2/pool/plugins/javax.xml.rpc_1.1.0.v201209140446/lib/jaxrpc.jar"/>

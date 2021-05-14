@@ -14,7 +14,7 @@ public class Main {
 		campaignManager.addCampaign(campaign1);
 		
 		GamerManager gamerManager = new GamerManager(new MernisServiceAdapter());
-		Gamer gamer1 = new Gamer(1, "Özkan", "Teke", "61141306024", 1993, 800);
+		Gamer gamer1 = new Gamer(1, "Özkan", "Teke", "61141303524", 1993, 800);
 		gamerManager.add(gamer1);
 		
 		buyingManager.buyWithoutCampaign(gamer1, game1);
