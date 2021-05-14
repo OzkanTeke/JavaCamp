@@ -12,7 +12,7 @@
 	<classpathentry kind="lib" path="C:/Users/OZ_TE/.p2/pool/plugins/javax.xml.soap_1.2.0.v201005080501/lib/saaj.jar"/>
 	<classpathentry kind="lib" path="C:/Users/OZ_TE/.p2/pool/plugins/javax.wsdl_1.6.2.v201012040545.jar"/>
 	<classpathentry kind="lib" path="C:/Users/OZ_TE/.p2/pool/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar"/>
-	<classpathentry kind="lib" path="C:/Users/OZ_TE/eclipse/activation.jar"/>
-	<classpathentry kind="lib" path="C:/Users/OZ_TE/eclipse/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/OZ_TE/Downloads/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/OZ_TE/Downloads/mailapi-1.5.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
