@@ -1,38 +1,35 @@
 package kodlamaio.hrms.entities.concretes;
 
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "job_description")
+@Table(name = "skill")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class Job {
+@AllArgsConstructor
+public class Skill {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "job_id")
-	private int id;
+	@Column(name = "skill_id")
+	private int skillId;
 	
-	@Column(name = "position")
-	private String position;
+	@Column(name = "definition")
+	private String definition;
 	
-	@OneToMany(mappedBy = "job")
-	@JsonIgnore
-	private List<JobAdvertisement> jobAdvertisements;
-	
+	@ManyToOne()
+	@JoinColumn(name = "cv_id")
+	private Cv cv;
+
 }

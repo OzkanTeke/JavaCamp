@@ -26,7 +26,9 @@ public class JobSeekerManager implements JobSeekerService{
 	private EmailActivationService emailActivationService;
 
 	@Autowired
-	public JobSeekerManager(JobSeekerRepository jobSeekerRepository, JobSeekerMernisValidationService jobSeekerMernisValidationService, EmailActivationService emailActivationService) {
+	public JobSeekerManager(JobSeekerRepository jobSeekerRepository,
+			JobSeekerMernisValidationService jobSeekerMernisValidationService,
+			EmailActivationService emailActivationService) {
 		super();
 		this.jobSeekerRepository = jobSeekerRepository;
 		this.jobSeekerMernisValidationService = jobSeekerMernisValidationService;
@@ -80,4 +82,5 @@ public class JobSeekerManager implements JobSeekerService{
             return false;
         }
 	}
+	
 }
