@@ -11,14 +11,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import kodlamaio.hrms.business.abstracts.CvService;
 import kodlamaio.hrms.entities.concretes.Cv;
+import kodlamaio.hrms.entities.dtos.CvDto;
+import kodlamaio.hrms.core.utilities.results.DataResult;
 import kodlamaio.hrms.core.utilities.results.ErrorDataResult;
 
 @RestController
@@ -36,6 +40,11 @@ public class CvsController {
 	@PostMapping(value = "/add")
 	public ResponseEntity<?> add(@Valid @RequestBody Cv cv){
 		return ResponseEntity.ok(this.cvService.add(cv));
+	}
+	
+	@GetMapping("/getbyjobseeker")
+	public DataResult<CvDto> getByJobSeekerId(@RequestParam int jobSeekerId){
+		return this.cvService.getByJobSeekerId(jobSeekerId);
 	}
 	
 	@ExceptionHandler(MethodArgumentNotValidException.class)
