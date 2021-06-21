@@ -38,6 +38,10 @@ public class JobAdvertisement {
 	@JoinColumn(name = "city_id")
 	private City city;
 	
+	@ManyToOne()
+	@JoinColumn(name = "type_id")
+	private WorkType workType;
+	
 	@Column(name = "min_salary")
 	private int minSalary;
 	
@@ -55,6 +59,12 @@ public class JobAdvertisement {
 	
 	@Column(name = "is_active")
 	private boolean isActive;
+	
+	@Column(name = "is_authorized")
+	private boolean isAuthorized;
+	
+	@Column(name = "here_or_there")
+	private boolean hereOrThere;
 	
 	@ManyToOne()
 	@JoinColumn(name = "employer_id")
